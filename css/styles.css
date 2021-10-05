@@ -1,0 +1,42 @@
+header {
+    background-color: midnightblue;
+    font-size: 20px;
+    margin:0;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 20px;
+    color: white;
+}
+body {
+    margin: 0;
+}
+
+footer {
+    height: 100px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.info {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 20px;
+}
+
+.info h1,h2 {
+    color: midnightblue;
+}
+.info h1 {
+    font-size: 40px;
+}
+
+.info th, td {
+    padding: 8px;
+    border: 1px solid midnightblue;
+}
+.info table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
