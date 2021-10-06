@@ -9,97 +9,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Yaldevi&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Educación en Colombia por municipio</h1>
-        <p> Visualización para caracterizar el cubrimiento de la educación por municipio en Colombia</p>
-    </header>
-    <section class="dataviz">
-        <svg></svg>
-    </section>
-    <section class="info">
-        <h1>What:</h1>
-        <h2>Dataset</h2>
-        <p>- Dataset type are: Table</p>
-        <p>- Number of fields/attributes is: 10</p>
-        <p>- Number of items is: 1000</p>
-        <h2>Fields</h2>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Meaning</th>
-                <th>Type</th>
-                <th>Cardinality/Range</th>
-            </tr>
-            <tr>
-                <td>a_o</td>
-                <td>Año del dato</td>
-                <td>Categorical</td>
-                <td>[2005, 2006, 2007]</td>
-            </tr>
-            <tr>
-                <td>c_digo_deldepartamento</td>
-                <td>Codigo del departamento del dato</td>
-                <td>Categorical</td>
-                <td>Lista con todos los códigos de los departamentos de Colombia segun el dane</td>
-            </tr>
-            <tr>
-                <td>c_digo_delmunicipio</td>
-                <td>Código del municipio del dato</td>
-                <td>Categorical</td>
-                <td>Lista con todos los códigos de los municipios de Colombia segun el dane</td>
-            </tr>
-            <tr>
-                <td>doctorado</td>
-                <td>Número de doctorados ofrecidos</td>
-                <td>COMPLETAR</td>
-                <td>[0, 462]</td>
-            </tr>
-            <tr>
-                <td>especializacion</td>
-                <td>Número de especializaciones ofrecidos</td>
-                <td>COMPLETAR</td>
-                <td>[0, 23603]</td>
-            </tr>
-            <tr>
-                <td>maestria</td>
-                <td>Número de maestrias ofrecidos</td>
-                <td>COMPLETAR</td>
-                <td>[0, 7399]</td>
-            </tr>
-            <tr>
-                <td>nombre_del_municipio</td>
-                <td>Nombre del municipio del dato</td>
-                <td>Categorical</td>
-                <td>Los nombres de los municipios de Colombia</td>
-            </tr>
-            <tr>
-                <td>tecnica_profesional</td>
-                <td>Número de formaciones tecnicas-profesionales ofrecidas</td>
-                <td>COMPLETAR</td>
-                <td>[0, 63098]</td>
-            </tr>
-            <tr>
-                <td>tecnologica</td>
-                <td>Número de formaciones tecnologicas ofrecidas</td>
-                <td>COMPLETAR</td>
-                <td>[0, 40178]</td>
-            </tr>
-            <tr>
-                <td>universitaria</td>
-                <td>Número de formaciones universitarias ofrecidas</td>
-                <td>COMPLETAR</td>
-                <td>[0, 279544]</td>
-            </tr>
-        </table>
-        <p>Se transformaron los atributos anteriormente mencionados para agruparlos por la suma de todos los doctorados, especializaciones, formaciones tecnico-profesional y maestrias habia en cada departamento</p>
-        <h1>Why:</h1>
-        <p>Comparar la oferta educativa de cada departamento de Colombia</p>
-        <p>Identificar los municipios con mas o menos oferta educativa</p>
-    </section>
-    <footer>
-        <p class="text-muted mb-0 py-2">Los datos de la visualización se tomaron de datos.gov.co</p>
-        <p class="text-muted mb-0 py-2">Copyright © 2021 Juliana Sierra</p>
-    </footer>
+<header>
+    <h1>Educación en Colombia por municipio</h1>
+    <p> Visualización para caracterizar el cubrimiento de la educación por municipio en Colombia</p>
+</header>
+<section class="dataviz">
+    <svg></svg>
+</section>
+<section class="info">
+    <h1>What:</h1>
+    <h2>Dataset</h2>
+    <p>- Dataset type are: Table</p>
+    <p>- Number of fields/attributes is: 10</p>
+    <p>- Number of items is: 1000</p>
+    <h2>Fields</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Meaning</th>
+            <th>Type</th>
+            <th>Cardinality/Range</th>
+        </tr>
+        <tr>
+            <td>a_o</td>
+            <td>Año del dato</td>
+            <td>Ordered ordinal</td>
+            <td>[2005, 2006, 2007]</td>
+        </tr>
+        <tr>
+            <td>c_digo_deldepartamento</td>
+            <td>Codigo del departamento del dato</td>
+            <td>Categorical</td>
+            <td>Lista con todos los códigos de los departamentos de Colombia según el Dane</td>
+        </tr>
+        <tr>
+            <td>c_digo_delmunicipio</td>
+            <td>Código del municipio del dato</td>
+            <td>Categorical</td>
+            <td>Lista con todos los códigos de los municipios de Colombia según el Dane</td>
+        </tr>
+        <tr>
+            <td>doctorado</td>
+            <td>Número de doctorados ofrecidos</td>
+            <td>Ordered  quantitative</td>
+            <td>[0, 462]</td>
+        </tr>
+        <tr>
+            <td>especializacion</td>
+            <td>Número de especializaciones ofrecidos</td>
+            <td>Ordered  quantitative</td>
+            <td>[0, 23603]</td>
+        </tr>
+        <tr>
+            <td>maestria</td>
+            <td>Número de maestrias ofrecidos</td>
+            <td>Ordered  quantitative</td>
+            <td>[0, 7399]</td>
+        </tr>
+        <tr>
+            <td>nombre_del_municipio</td>
+            <td>Nombre del municipio del dato</td>
+            <td>Categorical</td>
+            <td>Los nombres de los municipios de Colombia</td>
+        </tr>
+        <tr>
+            <td>tecnica_profesional</td>
+            <td>Número de formaciones tecnicas-profesionales ofrecidas</td>
+            <td>Ordered  quantitative</td>
+            <td>[0, 63098]</td>
+        </tr>
+        <tr>
+            <td>tecnologica</td>
+            <td>Número de formaciones tecnologicas ofrecidas</td>
+            <td>Ordered  quantitative</td>
+            <td>[0, 40178]</td>
+        </tr>
+        <tr>
+            <td>universitaria</td>
+            <td>Número de formaciones universitarias ofrecidas</td>
+            <td>Ordered  quantitative</td>
+            <td>[0, 279544]</td>
+        </tr>
+    </table>
+    <p>Se transformaron los atributos anteriormente mencionados para agruparlos por la suma de todos los doctorados, especializaciones, formaciones tecnico-profesional y maestrias habia en cada departamento</p>
+    <h1>Why:</h1>
+    <p>- Comparar la oferta educativa de cada departamento de Colombia</p>
+    <p>- Encontrar los departamentos con mas o menos oferta educativa</p>
+    <p>- Resumir la cantidad de oferta educativa en los departamentos del pais</p>
+    <h1>How: </h1>
+    <h2> Marcas: </h2>
+    <p> Puntos representando la cantidad de cada tipo de oferta escolar diferente para cada departamento</p>
+    <h2> Canales: </h2>
+    <p> Posición en el eje x: Representando el departamento del dato</p>
+    <p> Tamaño: Representando la cantidad de programas ofrecidos</p>
+    <p> Color: El tipo de la oferta (tecnica_profesional, maestria, especializacion, doctorado)</p>
+
+</section>
+<footer>
+    <p class="text-muted mb-0 py-2">Los datos de la visualización se tomaron de datos.gov.co</p>
+    <p class="text-muted mb-0 py-2">Copyright © 2021 Juliana Sierra</p>
+</footer>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
